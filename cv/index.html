@@ -7,10 +7,19 @@
     <meta name="description" content="This is my personal portfolio website">
     <meta name="author" content="Ibrahim Ciloglu">
     <title>My Portfolio !</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Staatliches&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Chakra+Petch&display=swap" rel="stylesheet">
 </head>
 
 <body>
-    <header>
+    <header class="header">
         <h1>Welcome to my portfolio !</h1>
         <p>Junior Web Developer</p>
         <a href="#profile">Profile</a>
@@ -18,7 +27,7 @@
         <a href="#skills">Skills</a>
         <a href="#contact">Contact</a>
     </header>
-    <main>
+    <main class="main">
         <article id="profile">
             <header>
                 <h2>Profile</h2>
@@ -29,15 +38,7 @@
         </article>
         <article id="experience">
             <h2>Experience</h2>
-            <section>
-                <header>
-                    <h3>Internal IT Admin</h3>
-                    <p>January 2020 - March 2022</p>
-                </header>
-                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, obcaecati eos aut quia sunt
-                    consequuntur quidem sequi, nulla illo nam itaque! Quam repellat, amet autem quisquam tempore itaque
-                    libero odio.</p>
-            </section>
+
             <section>
                 <header>
                     <h3>Automation Developer</h3>
@@ -47,14 +48,23 @@
                     dolor numquam quisquam rerum quam itaque est magnam. Facilis non quod officiis beatae provident
                     nihil omnis reiciendis ipsa.</p>
             </section>
+            <section>
+                <header>
+                    <h3>Internal IT Admin</h3>
+                    <p>January 2020 - March 2022</p>
+                </header>
+                <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Reiciendis, obcaecati eos aut quia sunt
+                    consequuntur quidem sequi, nulla illo nam itaque! Quam repellat, amet autem quisquam tempore itaque
+                    libero odio.</p>
+            </section>
         </article>
         <article id="skills">
             <header>
-                <h3>Skills</h3>
+                <h2>Skills</h2>
             </header>
             <section>
                 <header>
-                    <h4>soft skills</h4>
+                    <h3>soft skills</h3>
                 </header>
                 <ul>
                     <li>teamplayer</li>
@@ -68,7 +78,7 @@
             </section>
             <section>
                 <header>
-                    <h4>technical skills</h4>
+                    <h3>technical skills</h3>
                 </header>
                 <ul>
                     <li>html/css: basics</li>
@@ -79,7 +89,7 @@
         </article>
 
         <article id="contact">
-            <h4>contact</h4>
+            <h3>contact</h3>
             <ol type="1">
                 <li>
                     <a href="mailto:ibrahimciloglu.ic@gmail.com">Email</a>
