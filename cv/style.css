@@ -1,4 +1,6 @@
-* {
+*,
+*::before,
+*::after {
   box-sizing: border-box;
   font-family: "Chakra Petch", sans-serif;
 }
@@ -71,4 +73,13 @@ h6 {
 
 .link:hover {
   background-color: rgb(240, 221, 182);
+}
+
+::selection {
+  background-color: black;
+  color: white;
+}
+
+.profession::after {
+  content: " 💯 % !";
 }
