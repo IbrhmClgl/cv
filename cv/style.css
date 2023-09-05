@@ -5,22 +5,70 @@
 
 body {
   margin: 0px;
+  background: rgb(34, 195, 123);
+  background: linear-gradient(
+    0deg,
+    rgba(34, 195, 123, 1) 0%,
+    rgba(255, 255, 255, 1) 63%
+  );
 }
 
 h1,
 h2,
-h3 {
+h3,
+h4,
+h5,
+h6 {
   font-family: "Staatliches", cursive;
 }
 
 .header {
   text-align: center;
-  background-color: rgb(233, 230, 230);
-  padding: 48px 16px;
+  background-color: white;
+  padding: 70px 16px;
+  border-bottom: 5px solid grey;
+  max-width: 800px;
+  margin: 0 auto;
+}
+
+.nav-link {
+  padding: 2px 4px;
+  color: black;
+}
+
+.nav-link:hover {
+  color: black;
+  background-color: rgb(240, 221, 182);
+}
+
+.nav-link:active {
+  color: white;
+  background-color: darkgray;
 }
 
 .main {
   padding: 60px;
   margin: 0 auto;
   max-width: 800px;
+}
+
+/* space between areas */
+.main > * + * {
+  margin-top: 50px;
+}
+
+.main > * {
+  border-top: 2px solid grey;
+}
+
+.main > *:first-child {
+  border-top: none;
+}
+
+.link {
+  color: blue;
+}
+
+.link:hover {
+  background-color: rgb(240, 221, 182);
 }
