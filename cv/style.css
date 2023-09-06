@@ -2,6 +2,9 @@
 *::before,
 *::after {
   box-sizing: border-box;
+}
+
+html {
   font-family: "Chakra Petch", sans-serif;
 }
 
@@ -13,6 +16,7 @@ body {
     rgba(34, 195, 123, 1) 0%,
     rgba(255, 255, 255, 1) 63%
   );
+  font-family: inherit;
 }
 
 h1,
