@@ -87,3 +87,12 @@ h6 {
 .profession::after {
   content: " 💯 % !";
 }
+
+.exp-heading {
+  display: inline-block;
+}
+
+.exp-subheading {
+  display: inline-block;
+  margin-left: 10px;
+}
