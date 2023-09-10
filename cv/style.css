@@ -39,12 +39,6 @@ html {
 
 body {
   margin: 0rem;
-  background: rgb(34, 195, 123);
-  background: linear-gradient(
-    0deg,
-    rgba(34, 195, 123, 1) 0%,
-    rgba(255, 255, 255, 1) 63%
-  );
   font-family: inherit;
 }
 
@@ -59,11 +53,15 @@ h6 {
 
 .header {
   text-align: center;
-  background-color: white;
+  background: rgb(34, 195, 123);
+  background: linear-gradient(
+    90deg,
+    rgba(34, 195, 123, 1) 10%,
+    rgba(255, 255, 255, 1) 100%
+  );
   padding: 3rem 1rem;
   padding-top: 4.5rem;
-  border-bottom: 0.2rem solid grey;
-  max-width: 40rem;
+  max-width: 100%;
   margin: 0 auto;
   position: relative;
 }
@@ -115,7 +113,7 @@ h6 {
 }
 
 .main > * {
-  border-top: 0.1rem solid grey;
+  border-top: 0.1rem solid #c0eed9;
 }
 
 .main > *:first-child {
@@ -195,4 +193,18 @@ h2 {
 #contact {
   padding-left: 4rem;
   padding-right: 4rem;
+}
+
+.footer {
+  text-align: center;
+  background: rgb(34, 195, 123);
+  background: linear-gradient(
+    90deg,
+    rgba(34, 195, 123, 1) 10%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  padding: 3rem 1rem;
+  padding-top: 4.5rem;
+  width: 100%;
+  margin: 0 auto;
 }
