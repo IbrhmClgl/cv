@@ -101,12 +101,18 @@ h6 {
 
 .nav-link:hover {
   color: var(--black);
-  background-color: var(--nav-link-hover);
+  background-color: var(--link-hover);
+  transition: background-color 0.5s;
 }
 
 .nav-link:active {
   color: var(--white);
   background-color: var(--nav-link-bg-color);
+}
+.nav-link:focus {
+  color: var(--white);
+  outline-color: var(--nav-link-bg-color);
+  outline-style: dashed;
 }
 
 .main {
