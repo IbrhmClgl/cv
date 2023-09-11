@@ -4,6 +4,24 @@
   box-sizing: border-box;
 }
 
+/* ########## Colors ########## */
+:root {
+  --bg-color: linear-gradient(
+    90deg,
+    rgba(34, 195, 123, 1) 10%,
+    rgba(255, 255, 255, 1) 100%
+  );
+  --fallback-bg-color: rgb(34, 195, 123);
+  --link-hover: rgb(240, 221, 182);
+  --black: black;
+  --white: white;
+  --blue: blue;
+  --grey: grey;
+  --nav-link-bg-color: darkgray;
+  --border-color: #c0eed9;
+}
+/* ############################ */
+
 html {
   font-family: "Chakra Petch", sans-serif;
   font-size: 16px;
@@ -53,12 +71,8 @@ h6 {
 
 .header {
   text-align: center;
-  background: rgb(34, 195, 123);
-  background: linear-gradient(
-    90deg,
-    rgba(34, 195, 123, 1) 10%,
-    rgba(255, 255, 255, 1) 100%
-  );
+  background: var(--fallback-bg-color);
+  background: var(--bg-color);
   padding: 3rem 1rem;
   padding-top: 4.5rem;
   max-width: 100%;
@@ -82,17 +96,17 @@ h6 {
 .nav-link {
   text-decoration: none;
   padding: 0.2rem 0.3rem;
-  color: black;
+  color: var(--black);
 }
 
 .nav-link:hover {
-  color: black;
-  background-color: rgb(240, 221, 182);
+  color: var(--black);
+  background-color: var(--nav-link-hover);
 }
 
 .nav-link:active {
-  color: white;
-  background-color: darkgray;
+  color: var(--white);
+  background-color: var(--nav-link-bg-color);
 }
 
 .main {
@@ -113,7 +127,7 @@ h6 {
 }
 
 .main > * {
-  border-top: 0.1rem solid #c0eed9;
+  border-top: 0.1rem solid var(--border-color);
 }
 
 .main > *:first-child {
@@ -121,16 +135,16 @@ h6 {
 }
 
 .link {
-  color: blue;
+  color: var(--blue);
 }
 
 .link:hover {
-  background-color: rgb(240, 221, 182);
+  background-color: var(--nav-link-hover);
 }
 
 ::selection {
-  background-color: black;
-  color: white;
+  background-color: var(--black);
+  color: var(--white);
 }
 
 .title-group {
@@ -182,9 +196,9 @@ h2 {
   top: 1.1rem;
   right: 1.1rem;
   padding: 0.3rem;
-  border: 0.01rem solid grey;
+  border: 0.01rem solid var(--grey);
   border-radius: 0.3rem;
-  background: #c0eed9;
+  background: var(--border-color);
 }
 
 #profile,
@@ -197,12 +211,8 @@ h2 {
 
 .footer {
   text-align: center;
-  background: rgb(34, 195, 123);
-  background: linear-gradient(
-    90deg,
-    rgba(34, 195, 123, 1) 10%,
-    rgba(255, 255, 255, 1) 100%
-  );
+  background: var(--fallback-bg-color);
+  background: var(--bg-color);
   padding: 3rem 1rem;
   padding-top: 4.5rem;
   width: 100%;
