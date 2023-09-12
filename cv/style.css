@@ -202,9 +202,18 @@ h2 {
   top: 1.1rem;
   right: 1.1rem;
   padding: 0.3rem;
+  opacity: 0.5;
   border: 0.01rem solid var(--grey);
   border-radius: 0.3rem;
   background: var(--border-color);
+  transform-origin: top right;
+  transition: transform 0.25s ease-in-out, opacity 0.25s ease-in-out;
+}
+
+.header:hover .badge,
+.header:focus-within .badge {
+  opacity: 1;
+  transform: scale(1.5);
 }
 
 #profile,
