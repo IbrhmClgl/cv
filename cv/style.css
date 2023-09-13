@@ -118,7 +118,7 @@ h6 {
 .main {
   padding: 2.2rem;
   margin: 0 auto;
-  max-width: 60ch;
+  max-width: 80ch;
 }
 
 /* space between areas */
@@ -147,7 +147,7 @@ h6 {
 @media screen and (min-width: 768px) {
   .main-article {
     display: grid;
-    grid-template-columns: 1fr 2.5fr;
+    grid-template-columns: 1fr 3.5fr;
   }
   .main-article-content {
     margin-top: 4rem;
